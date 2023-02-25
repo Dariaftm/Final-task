@@ -1,12 +1,12 @@
 ﻿// Написать программу, которая из имеющегося массива строк формирует новый массив из строк, длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 Console.WriteLine("Введите количество элементов массива: ");
-int size  = int.Parse(Console.ReadLine());
+int size  = int.Parse(Console.ReadLine()!);
 
 string[] arr1 = new string[size];
 
 for (int i = 0; i < size; i++){
 	Console.Write("Введите элемент массива: ");
-    string result = Console.ReadLine();
+    string result = Console.ReadLine()!;
 	arr1[i] = result;  
 }
 Console.WriteLine();
